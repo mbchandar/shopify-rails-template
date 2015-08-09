@@ -32,6 +32,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use the official Shopify gem
+gem 'shopify_api', '~> 4.0.5'
+
+# Use Omniauth to handle authentication
+gem 'omniauth', '~> 1.2.2'
+gem 'omniauth-shopify-oauth2', '~> 1.1.10'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -41,5 +48,12 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # RSpec for testing
+  gem 'rspec', '~> 3.3.0'
+  gem 'rspec-core', '~> 3.3.2'
+  gem 'rspec-mocks', '~> 3.3.2'
+  gem 'rspec-expectations', '~> 3.3.1'
+  gem 'rspec-rails', '~> 3.3.3'
 end
 
